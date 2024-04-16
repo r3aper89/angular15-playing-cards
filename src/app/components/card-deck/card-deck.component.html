@@ -1,0 +1,8 @@
+<div
+  class="row row-cols-1 row-cols-sm-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-4 g-4"
+>
+  <div *ngFor="let card of cards">
+    <!-- <app-card [card]="card"></app-card> -->
+    <app-card [card]="card" (cardAdded)="addCardToHand(card.id)"></app-card>
+  </div>
+</div>
